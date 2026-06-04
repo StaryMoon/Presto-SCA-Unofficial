@@ -1,0 +1,10 @@
+seed: 2026
+batch_size: 2
+frames: 16
+patches_per_frame: 8
+segments: 4
+caption_tokens: 12
+embed_dim: 64
+num_heads: 4
+learning_rate: 0.0002
+steps: 1000

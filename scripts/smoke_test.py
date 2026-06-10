@@ -8,22 +8,20 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import torch
 
-from presto_sca_unofficial import TinyPrestoBlock
+from presto_sca_unofficial import ModelConfig, UnofficialModel, reconstruction_loss
 
 
 def main() -> None:
     torch.manual_seed(2026)
-    clean = torch.randn(2, 16, 8, 64)
-    noisy = clean + 0.1 * torch.randn_like(clean)
-    subcaptions = torch.randn(2, 4, 12, 64)
-
-    block = TinyPrestoBlock(embed_dim=64, num_heads=4)
-    loss = block.toy_denoising_loss(noisy, clean, subcaptions)
+    config = ModelConfig(task="video", hidden_dim=64, num_layers=2, num_heads=4, output_dim=64)
+    model = UnofficialModel(config)
+    image = torch.rand(2, 3, 64, 64)
+    condition = torch.randn(2, 4, config.hidden_dim)
+    out = model(image, condition=condition)
+    loss = reconstruction_loss(out.primary)
     loss.backward()
-    output = block(noisy, subcaptions)
-
+    print(f"output: {tuple(out.primary.shape)}")
     print(f"loss: {loss.item():.6f}")
-    print(f"output: {output.shape}")
 
 
 if __name__ == "__main__":

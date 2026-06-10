@@ -1,15 +1,5 @@
 # Contributing
 
-This is an unofficial starter. Please keep claims precise:
+Contributions are welcome. Useful pull requests include paper-faithful modules, dataset converters, training scripts, evaluation scripts, documentation fixes, and links to verified reproduction logs.
 
-- Do not claim official status.
-- Do not claim reproduced generation quality unless experiments were actually run.
-- Include commands and dataset details for experiments.
-
-Useful contributions:
-
-- SCA variant implementations
-- subcaption parsing
-- toy diffusion loop
-- segment routing visualization
-- latent video tokenizer adapter
+Please keep large datasets, checkpoints, and generated outputs outside git. For experiment results, include the config, dataset split, command, metric definition, and hardware information when possible.

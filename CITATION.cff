@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the original paper."
+title: "Long Video Diffusion Generation with Segmented Cross-Attention and Content-Rich Video Data Curation"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Minghao
+repository-code: "https://github.com/StaryMoon/Presto-SCA-Unofficial"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Long Video Diffusion Generation with Segmented Cross-Attention and Content-Rich Video Data Curation"
+  authors:
+  - family-names: Yan
+    given-names: Xin
+  - family-names: Cai
+    given-names: Yuxuan
+  - family-names: Wang
+    given-names: Qiuyue
+  - family-names: Zhou
+    given-names: Yuan
+  - family-names: Huang
+    given-names: Wenhao
+  - family-names: Yang
+    given-names: Huan
+  conference: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  year: 2025
+  url: "https://openaccess.thecvf.com/content/CVPR2025/html/Yan_Long_Video_Diffusion_Generation_with_Segmented_Cross-Attention_and_Content-Rich_Video_CVPR_2025_paper.html"

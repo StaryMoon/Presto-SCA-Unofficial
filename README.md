@@ -14,6 +14,25 @@
 
 > This is an **unofficial** implementation maintained by [@StaryMoon](https://github.com/StaryMoon). If this repository helps your reading, reproduction, or course project, please consider giving it a star and following my GitHub profile.
 
+## Paper / Project Preview
+
+<p align="center">
+  <img src="assets/paper-preview.png" alt="Presto-SCA-Unofficial paper or project page preview" width="900">
+</p>
+
+<sub>Image source: public paper/project page screenshot, [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Yan_Long_Video_Diffusion_Generation_with_Segmented_Cross-Attention_and_Content-Rich_Video_CVPR_2025_paper.html). Captured/organized on 2026-07-02. This repository is unofficial and is not affiliated with the paper authors.</sub>
+
+## At a Glance
+
+| Item | Details |
+|---|---|
+| Paper | Long Video Diffusion Generation with Segmented Cross-Attention and Content-Rich Video Data Curation |
+| Venue / Source | CVPR 2025 |
+| Focus | This repository organizes a PyTorch implementation for Long Video Diffusion Generation with Segmented Cross-Attention and Content-Rich Video Data Curation, focusing on long vide... |
+| Repository type | Unofficial PyTorch reproduction starter |
+| Local entry point | `python scripts/smoke_test.py` |
+
+
 ## News
 
 - **2026-06-10**: Repository upgraded with an official-style README, paper citation metadata, cleaner package interfaces, default configuration, and release-ready project structure.
